@@ -26,7 +26,7 @@
     * 이미 만든 expression을 수정하고 싶으면 Expression Editor>Select Filter> By Expression Name
 
 
-### 핸들의 회전과 바퀴의 
+### 핸들의 회전과 바퀴의 회전
 1. 핸들 컨트롤러 만들기
 1. v를 눌러서 핸들의 중간에 컨트롤러의 피봇 맞추기, rotate X: 90
    * freeze
