@@ -64,4 +64,4 @@ Windows>Animation Editors>Graph Editor
       
       
 ## Reference
-[애니메이션의 12가지 법칙](https://cafe.naver.com/mayaedu)
+[애니메이션의 12가지 법칙](https://cafe.naver.com/mayaedu/271)
