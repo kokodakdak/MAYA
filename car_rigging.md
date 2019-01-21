@@ -33,3 +33,35 @@
 1. 핸들 컨트롤러 누르고 ctrl + G(그룹짓기)
    * 핸들 컨트롤러를 핸들의 각도에 맞춰서 rotate 시키면 핸들의 움직임이 이상해지기 때문에 그룹에 rotate값을 주는 것.
 1. 핸들 컨트롤러 그룹을 선택해서 핸들 각도에 맞춰서 rotate값을 준다.
+
+# Cycle Animation
+사람이던 동물이던 반복적으로 행동하는 것들을 Loop를 이용해서 무한 반복 시키는 Animation
+
+* 첫 프레임의 키값이 끝 프레임의 키값과 동일
+   * 1fps = 24fps일 때 1~23fps만 play
+* 원하는 attribute만 key를 찍으려면 channel박스에서 원하는 attribute 드래그 후 오른쪽 버튼> key selected
+
+## 바닥에 튀기는 공
+1. plane 깔고, sphere를 만든다.
+      * sphere의 피봇을 가장 아래로 옮기고(D + V) 원점에 갖다 놓는다. (X)
+1. frame은 24로 설정
+
+   frame|1|7|24
+   ---|---|---|---
+   sphere transY|50|0|50
+
+1. frame 1 복사 frame 24 붙여넣기
+1. 23fps로 바꾸고 재생
+
+
+### 움직임 조정
+Windows>Animation Editors>Graph Editor
+   * 그래프 축소 확대 alt + shift + 마우스우클릭
+* translate Y 선택
+* break tangent를 이용해 양쪽 접선을 따로 움직이도록 한다.
+* 그래프를 V모양으로 만든다
+
+      
+      
+## Reference
+[애니메이션의 12가지 법칙](https://cafe.naver.com/mayaedu)
