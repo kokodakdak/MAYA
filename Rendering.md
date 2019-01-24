@@ -94,11 +94,11 @@ Attribute Editor의 Arnold탭으로 조절
 * Area Light
 
 ## 요소
-  intensity: 세기
-  exposure: intensity의 n제곱
-  Temperature: 조명의 온도
-  Light space: 조명의 모양
-  Light를 피사체에 가까이 두지 않는 게 중요하다
+  * intensity: 세기
+  * exposure: intensity의 n제곱
+  * Temperature: 조명의 온도
+  * Light space: 조명의 모양
+  * Light를 피사체에 가까이 두지 않는 게 중요하다
 
 
 
