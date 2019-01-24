@@ -95,4 +95,10 @@ System
 AOVs
 한장의 이미지에서 속성을 따로 분리하는 탭
 
-Dianostic
+Dianosti
+
+Create>Lights>
+Arnold>Lights>
+
+Mesh Light
+area light:네모 판떼기 라이트
