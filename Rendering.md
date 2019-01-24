@@ -20,36 +20,47 @@ Channel Box>TranslateX~Visibility 드래그>오른쪽 버튼>lock selected
 ## display Render Setting
   * Render Using</br>
     Render engine을 고르는 탭.
+  * Common
+    결과물 파일로 뽑아낼 때 설정하는 곳
+      * File Output
+        * File name prefix : 파일 이름대로 이미지 파일로 아웃풋됨
+        * image format : exr로 쓰는 게 좋다. 속성(채널)을 하나의 파일로 저장.
+        * compression : 필요x
+      * Meta data
+        * Color Space : 디지털로 송출되는 컬러는 sRGB.
+        * Frame/Animation ext : name.ext(Single Frame) 한장의 이미지만 뽑겠다고 설정하는 것.
+            * name_#.ext를 추천
+            * **name** file name prefix에서 설정한 것.
+            * **#** frame 넘버
+            * **ext** 확장자 자리
+        * Frame padding : frame 넘버 자릿수
+      * Frame Range
+        * By frame : frame을 n장씩 렌더링하겠다. ex)0.5 -> 한프레임을 두 장으로 렌더링
+      * Renderable Cameras
+        * Renderable Camera : 내가 만든 camera로 설정
+      * Image Size
+        * Presets : 사이즈(영화만들 땐 꼭 HD_1080) 
+      
+  * Arnold renderer
+  * System
+  * AOVs
+  * Diagnostics
 Windows>setting/preference>Plug-in Manager>mtoa.mll
-Display Render setting
+
 
 Render Using: Render engine
 2018년 부터는 Arnold Renderer가 탑재. 기본 Render engine으로 사용되고 있다.
 ex) V-ray, mental-ray, Render man
 Arnold의 장점: real time으로 결과를 확인할 수 있다.
 단점: 무겁다
-
-Common 
-결과물 뽑을 때 설정하는 곳
-File name prefix: 파일 이름대로 이미지 파일로 아웃풋됨
-image format: exr로 쓰는 게 좋다. 속성(채널)을 하나의 파일로 저장.
-Compression: 필요x
-
-Metadata
-color Space: 디지털로 송출되는 컬러는 sRGB.
-Frame/Animation ext: name.ext(Single Frame) 한장의 이미지만 뽑겠다고 설정하는 것.
-                      name_#.ext를 추천
-                      name부분은 file name prefix에서 설정한 것.
-                      #frame 넘버
-                      ext: 예시, 확장자 자리
-Frame padding frame 넘버 자릿수
+                      
 
 
 Frame Range
-By frame frame을 n장씩 렌더링하겠다. 0.5 -> 한프레임을 두 장으로 렌더링
+ 
 
 Renderable Cameras(**중요**)
-내가 만든 camera로 설정
+
 
 Image size
 Presets: 사이즈
@@ -102,3 +113,7 @@ Arnold>Lights>
 
 Mesh Light
 area light:네모 판떼기 라이트
+
+ctrl+A
+intensity
+exposure intensity의 n제곱
