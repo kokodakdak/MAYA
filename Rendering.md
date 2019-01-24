@@ -108,10 +108,11 @@ Attribute Editor의 Arnold탭으로 조절
   key&rarr;back&rarr;base
 * 세기
   key&rarr;back&rarr;base
+* 조명의 종류
 
-key|back|base
----|---|---
-area|area|directional
+  key|back|base
+  ---|---|---
+  area|area|directional
 
 
 
