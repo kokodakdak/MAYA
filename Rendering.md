@@ -93,19 +93,26 @@ Attribute Editor의 Arnold탭으로 조절
   Spot Light Attributes가 더 중요
 * Area Light
 
+## 요소
+  intensity: 세기
+  exposure: intensity의 n제곱
+  Temperature: 조명의 온도
+  Light space: 조명의 모양
+  Light를 피사체에 가까이 두지 않는 게 중요하다
 
 
 
-Create>Lights>
-Arnold>Lights>
+# 마리오에 light 배치하기
 
-Mesh Light
-area light:네모 판떼기 라이트
+* 배치 순서
+  key&rarr;back&rarr;base
+* 세기
+  key&rarr;back&rarr;base
 
-ctrl+A
-intensity
-exposure intensity의 n제곱
-Temperature: 조명의 온도
-Light space: 조명의 모양
-Light를 피사체에 가까이 두지 않는 게 중요하다
+key|back|base
+---|---|---
+area|area|directional
+
+
+
 
