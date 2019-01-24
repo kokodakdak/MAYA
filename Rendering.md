@@ -75,6 +75,26 @@ Windows>setting/preference>Plug-in Manager>mtoa.mll
   * AOVs
     한장의 이미지에서 속성을 따로 분리하는 탭
   * Diagnostics
+  
+## MAYA의 조명
+Attribute Editor의 Arnold탭으로 조절
+숫자7 버튼: 빛을 확인
+숫자5 버튼: 원래대로
+* Directional Light
+  거리 상관없이 똑같이 적용되는 조명.
+  씬 전체의 밝기를 조절하는 조명으로 사용.
+  빛이 은은하지 않아서 그림자가 선명하다
+* Point Light
+  은은하다.
+  실내 조명으로 많이 쓴다.
+  조명에서 멀어질 수록 약해진다.
+* Spot Light
+  Arnold탭보다는
+  Spot Light Attributes가 더 중요
+* Area Light
+
+
+
 
 Create>Lights>
 Arnold>Lights>
@@ -87,11 +107,5 @@ intensity
 exposure intensity의 n제곱
 Temperature: 조명의 온도
 Light space: 조명의 모양
-Light를 피사체에 가까이 두지 않는 게 거리 사관
-
-7번 버튼: 빛을 확인
-원래대로 5번
-거리 상간없이 똑같이 적용. 씬 전체의 밝기를 조절하는 조명
-빛이 은은하지 않아서 그림자가 선명하다
-Attribute Editor의 Arnold탭으로 조절
+Light를 피사체에 가까이 두지 않는 게 중요하다
 
