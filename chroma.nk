@@ -1,0 +1,124 @@
+#! /home/bae/NUKE/libnuke-11.3.1.so -nx
+version 11.3 v1
+define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <window x="0" y="28" w="2560" h="1341" maximized="1" screen="0">
+        <splitter orientation="1">
+            <split size="40"/>
+            <dock id="" hideTitles="1" activePageId="Toolbar.1">
+                <page id="Toolbar.1"/>
+            </dock>
+            <split size="1897" stretch="1"/>
+            <splitter orientation="2">
+                <split size="758"/>
+                <dock id="" activePageId="Viewer.1">
+                    <page id="Viewer.1"/>
+                </dock>
+                <split size="533"/>
+                <dock id="" activePageId="DAG.1">
+                    <page id="DAG.1"/>
+                    <page id="Curve Editor.1"/>
+                    <page id="DopeSheet.1"/>
+                </dock>
+            </splitter>
+            <split size="615"/>
+            <dock id="" activePageId="Properties.1">
+                <page id="Properties.1"/>
+                <page id="uk.co.thefoundry.backgroundrenderview.1"/>
+            </dock>
+        </splitter>
+    </window>
+</layout>
+}
+Root {
+ inputs 0
+ name /home/bae/MAYA_Nuke/chroma.nk
+ last_frame 130
+ lock_range true
+ format "2048 1556 0 0 2048 1556 1 2K_Super_35(full-ap)"
+ proxy_type scale
+ proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
+ colorManagement Nuke
+ workingSpaceLUT linear
+ monitorLut sRGB
+ int8Lut sRGB
+ int16Lut sRGB
+ logLut Cineon
+ floatLut linear
+}
+Read {
+ inputs 0
+ file_type png
+ file /home/bae/Downloads/Keying_Source/BG.%04d.png
+ format "1260 540 0 0 1260 540 1 "
+ last 130
+ origlast 130
+ origset true
+ name Read1
+ xpos -158
+ ypos -207
+}
+set N5fb8dc0 [stack 0]
+Read {
+ inputs 0
+ file_type png
+ file /home/bae/Downloads/Keying_Source/GS.%04d.png
+ format "1260 540 0 0 1260 540 1 "
+ last 130
+ origlast 130
+ origset true
+ name Read2
+ xpos 45
+ ypos -196
+}
+set N72057f0 [stack 0]
+IBKColourV3 {
+ name IBKColourV3_1
+ xpos 45
+ ypos -90
+ screen_type green
+ off {0 -0.01 0}
+ mult {1 1.01 1}
+ erode 0.8
+ multi 50
+}
+push $N72057f0
+IBKGizmoV3 {
+ inputs 3
+ name IBKGizmoV3_1
+ xpos -158
+ ypos -90
+ st C-green
+ red_weight 0.74
+ blue_green_weight 0.385
+ ublu true
+ ubcr true
+}
+HueCorrect {
+ hue {sat {}
+   lum {}
+   red {}
+   green {}
+   blue {}
+   r_sup {}
+   g_sup {curve 1 1 0.6606965065 0.3378109932 0.2174130678 0.288557291 1}
+   b_sup {}
+   sat_thrsh {}}
+ name HueCorrect1
+ xpos -276
+ ypos -91
+}
+push $N5fb8dc0
+Merge2 {
+ inputs 2
+ name Merge1
+ xpos -405
+ ypos -90
+}
+Viewer {
+ frame 1
+ frame_range 1-130
+ name Viewer1
+ xpos -158
+ ypos 135
+}
