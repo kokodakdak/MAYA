@@ -61,9 +61,9 @@
     - viewer랑 연결
 
 &rarr; 단점: 배경의 잔상이 남는다</br>
-해결방법 1. gizmo의 red weight과 blue/green weight을 조절한다(+ use background luminance/use bkg chroma)</br>
-해결방법 2. Color correction을 이용한다</br>
-해결방법 3. Hue Correction을 이용한다.</br>
+> 해결방법 1. gizmo의 red weight과 blue/green weight을 조절한다(+ use background luminance/use bkg chroma)</br>
+> 해결방법 2. Color correction을 이용한다</br>
+> 해결방법 3. Hue Correction을 이용한다.</br>
 
 
 해결방법 1.
