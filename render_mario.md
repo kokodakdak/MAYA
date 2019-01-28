@@ -34,9 +34,11 @@
 
 1. Rendering모드로 바꾸기
 1. Render>Batch Render클릭 &raar; Script Editor에 렌더링과정이 뜬다
+1. Fcheck 을 열어서 file>openimage>열기 (Fcheck: 마야깔면 기본적으로 같이 깔린다)
 
 **취소하고 싶으면**
 - esc 눌러도 소용없음
 - Render>Cancel Batch Render
     - 만약 21프레임 지 render하고 끊겼다면 다음에 render할 때 render setting에서 22프레임부터 rendering
+
 
