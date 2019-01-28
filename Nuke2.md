@@ -48,19 +48,19 @@
 1. IBKgizmo 노드 생성
 
     C|fg|bg
-    ---|---|---
+    :---:|:---:|:---:
     Colour|fore ground|back ground
 
     - screentype : C-green(블루스크린이면 C-blue)
 1. merge노드 생성
 
     a|b
-    ---|---
+    :---:|:---:
     IBKGizmo|background
 
     - viewer랑 연결
 
-&rarr;  배경의 잔상이 남는다**</br>
+&rarr; 단점: 배경의 잔상이 남는다</br>
 해결방법 1. gizmo의 red weight과 blue/green weight을 조절한다(+ use background luminance/use bkg chroma)</br>
 해결방법 2. Color correction을 이용한다</br>
 해결방법 3. Hue Correction을 이용한다.</br>
